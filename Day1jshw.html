@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Calculator</title>
+</head>
+<body>
+    <h2>Grocery Calculator</h2>
+    <script>
+        let ricePrice = 60;
+        let sugarPrice = 45;
+        let wheatPrice = 50;
+        let riceQty = 2;
+        let sugarQty = 3;
+        let wheatQty = 4;
+        let riceCost = ricePrice * riceQty;
+        let sugarCost = sugarPrice * sugarQty;
+        let wheatCost = wheatPrice * wheatQty;
+        console.log("Rice cost: ₹" + riceCost);
+        console.log("Sugar cost: ₹" + sugarCost);
+        console.log("Wheat cost: ₹" + wheatCost);
+        let total = riceCost + sugarCost + wheatCost;
+        console.log("Total bill: ₹" + total);
+        wheatQty = 5;
+        wheatCost = wheatPrice * wheatQty;
+        total = riceCost + sugarCost + wheatCost;
+        console.log("Updated Wheat cost: ₹" + wheatCost);
+        console.log("Updated total bill: ₹" + total);
+    </script>
+</body>
+</html>
