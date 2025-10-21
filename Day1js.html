@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online bussiness </title>
+</head>
+<body>
+
+    <h2>Online Store</h2>
+
+    <p id="total1"></p>
+    <p id="total2"></p>
+
+    <script>
+        let tshirts = 5;
+        let tshirtPrice = 400;
+        let caps = 3;
+        let capPrice = 150;
+        let total = (tshirts * tshirtPrice) + (caps * capPrice);
+        document.getElementById("total1").innerText = "Total initial: ₹" + total;
+        tshirtPrice = 450;
+        let newTotal = (tshirts * tshirtPrice) + (caps * capPrice);
+        document.getElementById("total2").innerText = "Total updated t-shirt price: ₹" + newTotal;
+    </script>
+
+</body>
+</html>
+
