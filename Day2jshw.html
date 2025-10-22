@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Contact Manager</title>
+</head>
+<body>
+
+  <p id="info1"></p>
+  <p id="info2"></p>
+
+  <script>
+    let contact1 = {
+      name: "Alice Johnson",
+      phone: "9088777665",
+      email: "alice@gmail.com",
+      getInfo: function() {
+        return this.name + " | " + this.phone + " | " + this.email;
+      }
+    };
+    let contact2 = {
+      name: "Bob Smith",
+      phone: "9876543210",
+      email: "bob@gmail.com",
+      getInfo: function() {
+        return this.name + " | " + this.phone + " | " + this.email;
+      }
+    };
+    function printContactInfo(contact, id) {
+      document.getElementById(id).textContent = contact.getInfo();
+    }
+    printContactInfo(contact1, "info1");
+    printContactInfo(contact2, "info2");
+  </script>
+
+</body>
+</html>
