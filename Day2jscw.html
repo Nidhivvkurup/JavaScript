@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library System</title>
+</head>
+<body>
+
+  <p id="summary"></p>
+
+  <script>
+   let book = {
+      title: 'The Silent Patient',
+      author: 'Alex Michaelides',
+      year: 2019,
+      getSummary: function() {
+        return "The book '" + this.title + "' was written by " + this.author + " in " + this.year + ".";
+      }
+    };
+
+    function printBookSummary(bookObj) {
+      document.getElementById('summary').textContent = bookObj.getSummary();
+    }
+
+    printBookSummary(book);
+  </script>
+
+</body>
+</html>
