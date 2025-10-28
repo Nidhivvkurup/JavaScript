@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Feedback Processor</title>
+</head>
+<body>
+  <h3>Feedback Processor</h3>
+
+  <input id="feedbackInput" value="   I loved the FOOD and the service!   " size="50">
+  <button onclick="processFeedback()">Process</button>
+
+  <p id="result"></p>
+
+  <script>
+    function processFeedback() {
+      let feedback = document.getElementById("feedbackInput").value;
+
+      feedback = feedback.trim();                 
+      feedback = feedback.toLowerCase();          
+      feedback = feedback.replace("food", "ambience"); 
+      let position = feedback.indexOf("service"); 
+      let words = feedback.split(" ");            
+
+      document.getElementById("result").innerHTML =
+        "Cleaned: " + feedback + "<br>" +
+        "Position of 'service': " + position + "<br>" +
+        "Words: [" + words.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
