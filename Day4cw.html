@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Statistics Widget</title>
+</head>
+<body>
+
+  <h2>Statistics Widget</h2>
+  <p id="output"></p>
+
+  <script>
+    let randomNum = Math.floor(Math.random() * 100) + 1;
+    let userScoreStr = "75";
+    let userScoreNum = Number(userScoreStr);
+    let difference = randomNum - userScoreNum;
+    let roundedSqrt = Math.round(Math.sqrt(userScoreNum));
+    let piValue = Math.PI;
+    let implicitConversion = "50" * 2;
+ document.getElementById("output").innerHTML =
+  "Random number: " + randomNum + "<br>" +
+  "User score (string): " + userScoreStr + "<br>" +
+  "User score (number): " + userScoreNum + "<br>" +
+  "Difference: " + difference + "<br>" +
+  "Rounded √score: " + roundedSqrt + "<br>" +
+  "π constant: " + piValue + "<br>" +
+  '"50" * 2 (implicit conversion): ' + implicitConversion;
+    </script>
+</body>
+</html>
